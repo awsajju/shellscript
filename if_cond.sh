@@ -4,9 +4,11 @@ echo "Enter today's day"
 
 read day
 
-if [ $day -eq sunday ];then
+    if [ $day -eq sunday ];then
 
-echo "Goto School"
+    echo "Goto School"
 
-else 
-  echo "today holiday"
+    else 
+    echo "today holiday"
+
+    fi
