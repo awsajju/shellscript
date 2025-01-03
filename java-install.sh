@@ -8,16 +8,22 @@ echo "ERROR: you must have the sudo access to execute the script"
 exit 1
 fi 
 
-dnf install mysql -y
-
+dnf list installed mysql
 if [ $? -ne 0 ]; then
 
-echo "Error : installing mysql is failure "
-exit 1
+    dnf install mysql -y
 
-else 
-echo "installing mysql is success"
+        if [ $? -ne 0 ]; then
 
+            echo "Error : installing mysql is failure "
+            exit 1
+
+        else 
+            echo "installing mysql is success"
+
+        fi
+    else 
+        echo "mysql already installed"
 fi
 
 
