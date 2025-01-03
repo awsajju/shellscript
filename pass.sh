@@ -1,9 +1,10 @@
 #!/bin/bash
 
-read -s -p "please Enter you user_name :"
+read -s -p "please Enter you user_name :"user_name
+echo 
 
 echo "$user_name"
 
 read -s -p "Please Enter your Passwd :"
 
-echo " $passwd"
+echo "Entered password"
