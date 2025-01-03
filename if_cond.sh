@@ -4,7 +4,7 @@ echo "Enter today's day"
 
 read day
 
-    if [ $day -ne "sunday" ];then
+    if [ $day -nq "sunday" ];then
 
     echo "Goto School"
 
